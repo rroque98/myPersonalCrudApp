@@ -7,7 +7,7 @@ This is a create update delete app.
 
 - [x] Create a textarea. Make it handle code! (use a textarea instead of a text)
 - [x] have two fields, one is a short name, the other is the snippet
-- [ ] going to store the name and code inside localStorage
+- [x] going to store the name and code inside localStorage
 - [ ] display all snippets
 - [ ] search for a snippet using the name
 <!-- example: <pre>JSON.stringify.... -->

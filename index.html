@@ -11,12 +11,21 @@
   <script src="app.js"></script>
 </head>
 <body>
-  <input class="textField" type="text" name="firstInputField" placeholder="Snippet Name">
-  <button class="setData">Click to save text</button>
-  <button class="getData">Click to get text</button>
-
-  <textarea name="textarea" rows="10" cols="50" placeholder="Type snippet code here"></textarea>
-<div class="debug"></div>
+  <div class="snippetName">
+    <input class="textField" type="text" name="firstInputField" placeholder="Snippet Name">
+  </div>
+  <div class="snippetNameButtons">
+    <button class="setData">Click to save snippet name</button>
+    <button class="getData">Click to get snippet name</button>
+  </div>
+  <div class="snippetCode">
+    <textarea class="textArea" type="text" rows="10" cols="50" placeholder="Type snippet code here"></textarea>
+  </div>
+  <div class="snippetCodeButtons">
+  	<button class="setSnippet">Save snippet</button>
+    <button class="getSnippet">Retrieve snippet</button>
+  </div>
+  <div class="debug"></div>
 
 <!-- 	<script >
 		$(document).ready(function() {

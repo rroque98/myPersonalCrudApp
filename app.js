@@ -13,4 +13,16 @@ $(document).ready(function() {
   // $('.textField').on('keyup', function() {
   // 	let textFieldValue = $('.textField').val();
   // });
+
+  $('.setSnippet').on('click', function() {
+    let textAreaValue = $('.textArea').val();
+    // console.log(textFieldValue);
+    $('debug').text(textAreaValue);
+    localStorage.setItem('myFormSnippetData', textAreaValue);
+    $('.textArea').val('');
+  });
+  $('.getSnippet').on('click', function() {
+  	let retrieveSnippetData = localStorage.getItem('myFormSnippetData');
+  	$('.debug').text(retrieveSnippetData);
+  });
 });
