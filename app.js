@@ -12,13 +12,27 @@ $(document).ready(function() {
     $('.textArea').val('');
     var individualSnippet= {};
     individualSnippet[textFieldValue] = textAreaValue;
-    snippets.push(individualSnippet);
+    snippets.push(JSON.stringify(individualSnippet));
   });
   $('.getSnippet').on('click', function() {
+  	let retrieveData = localStorage.getItem('myFormTextData');
+  	$('.retrievedSnippetName').text(retrieveData);
   	let retrieveSnippetData = localStorage.getItem('myFormSnippetData');
   	$('.debug').text(retrieveSnippetData);
-  	let retrieveData = localStorage.getItem('myFormTextData');
-  	$('.debug').text(retrieveData);
+
+  });
+
+  $('.getAllSnippets').on('click', function() {
+  	snippets.forEach(function(snip) {
+  	  for (var snipName in snip) {
+        //append
+        $('.debug').append(snipName);
+        $('.debug').append(snip[snipName]);
+  	  }
+  	});
+  	// when get all snippets is clicked
+  	// for each snippet in snippets array
+  	  // append the name and snippet to debug
   });
 });
 
