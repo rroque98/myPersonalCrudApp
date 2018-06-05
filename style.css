@@ -1,3 +1,59 @@
-button {
-	background-color: lightblue;
+/*button {
+  background-color: lightblue;
+}*/
+
+body {
+  background-image: url(scatteredPapersBackground.jpg);
+  background-size: cover;
 }
+
+header {
+  color: rgb(22, 109, 113);
+/*  border-bottom: 2px solid black;*/
+  /*width: 350px;*/
+  text-align: center;
+  /*margin: 10px 0px;*/
+}
+
+.textArea {
+  background-color: rgba(173, 206, 208, 1);
+  outline: none;
+}
+
+.textField {
+  background-color: rgba(173, 206, 208, 1);
+  outline: none;
+}
+
+
+button {
+   border-top: 1px solid #edc0c0;
+   background: #7d0707;
+   background: -webkit-gradient(linear, left top, left bottom, from(#c9adad), to(#7d0707));
+   background: -webkit-linear-gradient(top, #c9adad, #7d0707);
+   background: -moz-linear-gradient(top, #c9adad, #7d0707);
+   background: -ms-linear-gradient(top, #c9adad, #7d0707);
+   background: -o-linear-gradient(top, #c9adad, #7d0707);
+   padding: 5px 10px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 15px;
+   font-family: Georgia, Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+button:hover {
+   border-top-color: #4a0e0e;
+   background: #4a0e0e;
+   color: #ccc;
+   }
+button:active {
+   border-top-color: #545254;
+   background: #545254;
+   }
