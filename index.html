@@ -23,25 +23,35 @@
     </div>
   	<!-- <h1>Ricky's Snippets</h1> -->
   </header>
-  <div class="snippetName">
-    <input class="textField" type="text" name="firstInputField" placeholder="Snippet Name">
-  </div>
-<!--   <div class="snippetNameButtons">
-    <button class="setData">Click to save snippet name</button>
-    <button class="getData">Click to retrieve previous snippet name</button>
-  </div> -->
-  <div class="snippetCode">
-    <textarea class="textArea" type="text" rows="10" cols="50" placeholder="Type snippet code here"></textarea>
-  </div>
-  <div class="snippetCodeButtons">
-  	<!-- <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button> -->
-  	<button class="setSnippet">Save snippet</button>
-    <button class="getSnippet">Retrieve previous snippet</button>
-    <button class="getAllSnippets">Retrieve all snippets</button>
-  </div>
-  <!-- <div class="debug"></div> -->
-  <div class="retrievedSnippetName"></div>
-  <pre class="debug"><code></code></pre>
+    <div class="container">
+    	<div class="row">
+    		
+    	</div>
+    	<div class="row">
+    		
+    	</div>
+      	<div class="row">
+    		
+    	</div>
+      <div class="snippetName form-group">
+        <input class="textField shadow-lg bg-white rounded" type="text" name="firstInputField" placeholder="Snippet Name">
+      </div>
+        <!-- <div class="snippetNameButtons">
+        <button class="setData">Click to save snippet name</button>
+        <button class="getData">Click to retrieve previous snippet name</button>
+      </div> -->
+      <div class="snippetCode">
+        <textarea class="textArea form-group shadow-lg p-3 bg-white rounded" type="text" rows="10" cols="50" placeholder="Type snippet code here"></textarea>
+      </div>
+      <div class="snippetCodeButtons">
+        <button class="setSnippet btn btn-primary btn-sm shadow-lg">Save snippet</button>
+        <button class="getSnippet btn btn-primary btn-sm shadow-lg">Retrieve previous snippet</button>
+        <button class="getAllSnippets btn btn-primary btn-sm shadow-lg">Retrieve all snippets</button>
+      </div>
+      <!-- <div class="debug"></div> -->
+      <div class="retrievedSnippetName"></div>
+      <pre class="debug"><code></code></pre>
+    </div>
 
 <!-- 	<script >
 		$(document).ready(function() {

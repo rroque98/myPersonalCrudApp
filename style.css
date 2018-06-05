@@ -15,18 +15,26 @@ header {
   /*margin: 10px 0px;*/
 }
 
-.textArea {
-  background-color: rgba(173, 206, 208, 1);
-  outline: none;
-}
-
 .textField {
   background-color: rgba(173, 206, 208, 1);
   outline: none;
+  max-width: 30%
+  /*margin-bottom: 0px;*/
+  /*content: center;*/
+  /*margin-left: 20px*/
 }
 
+.textArea {
+  background-color: rgba(173, 206, 208, 1);
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  /*margin-left: 20px*/
+}
 
-button {
+/*button {
    border-top: 1px solid #edc0c0;
    background: #7d0707;
    background: -webkit-gradient(linear, left top, left bottom, from(#c9adad), to(#7d0707));
@@ -47,13 +55,13 @@ button {
    font-family: Georgia, Serif;
    text-decoration: none;
    vertical-align: middle;
-   }
+}
 button:hover {
    border-top-color: #4a0e0e;
    background: #4a0e0e;
    color: #ccc;
-   }
+}
 button:active {
    border-top-color: #545254;
    background: #545254;
-   }
+}*/
