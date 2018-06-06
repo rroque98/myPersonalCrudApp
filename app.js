@@ -34,6 +34,13 @@ $(document).ready(function() {
   	// for each snippet in snippets array
   	  // append the name and snippet to debug
   });
+  
+  //when findButton is clicked
+    //searchValue = extract the value of the input text
+    //for each snippet object in snippets array
+      // if the snippet object value is equal to the searchValue
+        // append that object to .debug like on line 30.
+
 });
 
   // $('.setData').on('click', function() {

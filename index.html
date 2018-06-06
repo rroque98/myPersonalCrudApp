@@ -53,14 +53,20 @@
         <button class="setData">Click to save snippet name</button>
         <button class="getData">Click to retrieve previous snippet name</button>
       </div> -->
-      <div class="snippetCode">
+      <div class="snippetCode form-group">
         <textarea class="textArea form-group shadow-lg p-3 bg-white rounded form-control" type="text" rows="10" cols="50" placeholder="Type snippet code here"></textarea>
-      </div class="form-group">
+      </div>
+      <!-- buttons -->
       <div class="snippetCodeButtons">
         <button class="setSnippet btn btn-primary btn-sm shadow-lg">Save snippet</button>
         <button class="getSnippet btn btn-primary btn-sm shadow-lg">Retrieve previous snippet</button>
         <button class="getAllSnippets btn btn-primary btn-sm shadow-lg">Retrieve all snippets</button>
       </div>
+      <!-- search section -->
+      <div class="search form-group">
+      	<input class="textField searchTextInput shadow-lg bg-white rounded form-control form-group" type="text" placeholder="Find by snippet name">
+        <button class="findButton btn btn-primary btn-sm shadow-lg">Find snippet</button>
+      </div class="snippetName form-group">
       <!-- <div class="debug"></div> -->
       <div class="retrievedSnippetName"></div>
       <pre class="debug rounded form-group shadow-lg"><code></code></pre>
