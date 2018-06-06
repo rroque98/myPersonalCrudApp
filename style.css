@@ -1,18 +1,30 @@
-/*button {
+button {
   background-color: lightblue;
-}*/
+}
 
 body {
-  background-image: url(scatteredPapersBackground.jpg);
+  background-image: url(colorfulBackground.jpg);
   background-size: cover;
 }
 
 header {
-  color: rgb(22, 109, 113);
+  color: rgb(91, 41, 0); /*rgb(22, 109, 113);*/
 /*  border-bottom: 2px solid black;*/
   /*width: 350px;*/
   text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  /*background-color: rgb(123, 180, 183);*/
   /*margin: 10px 0px;*/
+}
+
+/*.btn {
+	color: rgb(91, 41, 0);
+	background-color: rgb(13, 93, 104);
+}*/
+
+.jumbotron {
+  background-color: rgba(177, 215, 217, .9);
+
 }
 
 .textField {
@@ -40,6 +52,7 @@ header {
 
 .debug {
 	background-color: orange;
+	margin-top: 1rem;
 }
 
 /*button {
@@ -72,4 +85,4 @@ button:hover {
 button:active {
    border-top-color: #545254;
    background: #545254;
-}*/
+}
