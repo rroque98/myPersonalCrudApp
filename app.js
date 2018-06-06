@@ -1,10 +1,9 @@
 var snippets = [];
-
+// Store values in local storage:
 $(document).ready(function() {
   $('.setSnippet').on('click', function() {
     let textAreaValue = $('.textArea').val();
     let textFieldValue = $('.textField').val();
-    // console.log(textFieldValue);
     $('debug').text(textAreaValue);
     localStorage.setItem('myFormTextData', textFieldValue);
     $('.textField').val('');
@@ -14,6 +13,7 @@ $(document).ready(function() {
     individualSnippet[textFieldValue] = textAreaValue;
     snippets.push(individualSnippet);
   });
+// Retrieve previously saved snippet from local storage:
   $('.getSnippet').on('click', function() {
   	let retrieveData = localStorage.getItem('myFormTextData');
   	$('.retrievedSnippetName').text(retrieveData);
@@ -21,26 +21,26 @@ $(document).ready(function() {
   	$('.debug').text(retrieveSnippetData);
 
   });
-
+// Display all snippets:
   $('.getAllSnippets').on('click', function() {
   	snippets.forEach(function(snip) {
   	  for (var snipName in snip) {
   	  	console.log(snipName)
-        //append
         $('.debug').append('<div><p>' + snipName + '</p><p>' + snip[snipName] + '</p></div>');
   	  }
   	});
-  	// when get all snippets is clicked
-  	// for each snippet in snippets array
-  	  // append the name and snippet to debug
   });
-  
-  //when findButton is clicked
-    //searchValue = extract the value of the input text
-    //for each snippet object in snippets array
-      // if the snippet object value is equal to the searchValue
-        // append that object to .debug like on line 30.
-
+// Search button functionality:
+  $('.findButton').on('click', function() {
+  	let searchInput = $('.searchField').val();
+  	snippets.forEach(function(indSnip) {
+  	  for (var name in indSnip) {
+  	    if (name === searchInput) {
+          $('.debug').append('<div><p>' + name + '</p><p>' + indSnip[name] + '</p></div>')
+  	    }
+  	  }
+  	});
+  });
 });
 
   // $('.setData').on('click', function() {
