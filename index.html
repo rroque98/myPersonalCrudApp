@@ -14,15 +14,27 @@
 </head>
 <body>
   <header>
+  	<!-- <div>
+  	  <nav class="navbar navbar-default">
+  		<div class="navbar-header">
+  		  <a href="#" class="navbar-brand">Snippets</a>		
+  	    </div>
+  	    <div class="nav navbar-nav">
+  	    	<li><a href="#">About</a></li>
+  	    	<li><a href="#">Contact</a></li>
+  	    </div>
+  	  </nav>
+  	</div> -->
   	<div class="jumbotron">
       <h1 class="display-4">Ricky's Snippets</h1>
       <p class="lead">This is a simple snippet saving tool directed toward programmers looking for a personalized space to save small segments of code.</p>
       <hr class="my-4">
-      <p>Use this snippet saving tool for the convenience of having repeat code in one personalized area.</p>
+      <p>Use this snippet saving tool for the convenience of having repeat code in one area.</p>
       <a class="btn btn-primary btn-lg" href="#" role="button">Create Snippet</a>
     </div>
   	<!-- <h1>Ricky's Snippets</h1> -->
   </header>
+  <section>
     <div class="container">
     	<div class="row">
     		
@@ -34,14 +46,14 @@
     		
     	</div>
       <div class="snippetName form-group">
-        <input class="textField shadow-lg bg-white rounded" type="text" name="firstInputField" placeholder="Snippet Name">
+        <input class="textField shadow-lg bg-white rounded form-control" type="text" name="firstInputField" placeholder="Snippet Name">
       </div>
         <!-- <div class="snippetNameButtons">
         <button class="setData">Click to save snippet name</button>
         <button class="getData">Click to retrieve previous snippet name</button>
       </div> -->
       <div class="snippetCode">
-        <textarea class="textArea form-group shadow-lg p-3 bg-white rounded" type="text" rows="10" cols="50" placeholder="Type snippet code here"></textarea>
+        <textarea class="textArea form-group shadow-lg p-3 bg-white rounded form-control" type="text" rows="10" cols="50" placeholder="Type snippet code here"></textarea>
       </div>
       <div class="snippetCodeButtons">
         <button class="setSnippet btn btn-primary btn-sm shadow-lg">Save snippet</button>
@@ -52,7 +64,10 @@
       <div class="retrievedSnippetName"></div>
       <pre class="debug"><code></code></pre>
     </div>
-
+  </section>
+  <footer>
+  	
+  </footer>
 <!-- 	<script >
 		$(document).ready(function() {
 			$('body').html('<p>Hello World</p>');

@@ -12,7 +12,7 @@ $(document).ready(function() {
     $('.textArea').val('');
     var individualSnippet= {};
     individualSnippet[textFieldValue] = textAreaValue;
-    snippets.push(JSON.stringify(individualSnippet));
+    snippets.push(individualSnippet);
   });
   $('.getSnippet').on('click', function() {
   	let retrieveData = localStorage.getItem('myFormTextData');
@@ -24,10 +24,13 @@ $(document).ready(function() {
 
   $('.getAllSnippets').on('click', function() {
   	snippets.forEach(function(snip) {
+  	  // snip.forEach(function(snipCode) {
   	  for (var snipName in snip) {
+  	  	console.log(snipName)
         //append
-        $('.debug').append(snipName);
-        $('.debug').append(snip[snipName]);
+        $('.debug').append('<div><p>' + snipName + '</p><p>' + snip[snipName] + '</p></div>');
+        // $('.debug').append(snipName);
+        // $('.debug').append(snip[snipName]);
   	  }
   	});
   	// when get all snippets is clicked

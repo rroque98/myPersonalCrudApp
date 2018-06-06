@@ -34,6 +34,14 @@ header {
   /*margin-left: 20px*/
 }
 
+.retrievedSnippetName {
+	background-color: lightblue;
+}
+
+.debug {
+	background-color: orange;
+}
+
 /*button {
    border-top: 1px solid #edc0c0;
    background: #7d0707;
