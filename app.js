@@ -25,7 +25,6 @@ $(document).ready(function() {
   $('.getAllSnippets').on('click', function() {
   	snippets.forEach(function(snip) {
   	  for (var snipName in snip) {
-  	  	console.log(snipName)
         $('.debug').append('<div><p>' + snipName + '</p><p>' + snip[snipName] + '</p></div>');
   	  }
   	});
@@ -36,7 +35,7 @@ $(document).ready(function() {
   	snippets.forEach(function(indSnip) {
   	  for (var name in indSnip) {
   	    if (name === searchInput) {
-          $('.debug').append('<div><p>' + name + '</p><p>' + indSnip[name] + '</p></div>')
+          $('.debug').replaceWith('<div class="debug"><p>' + name + '</p><p>' + indSnip[name] + '</p></div>')
   	    }
   	  }
   	});
