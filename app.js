@@ -31,19 +31,30 @@ $(document).ready(function() {
     // else concat currentSnippetArray with indiv snippet
   });
 // Retrieve previously saved snippet from local storage:
-  $('.getSnippet').on('click', function() {
-  	let retrieveData = localStorage.getItem('myFormTextData');
-  	$('.retrievedSnippetName').text(retrieveData);
-  	let retrieveSnippetData = localStorage.getItem('myFormSnippetData');
-  	$('.debug').text(retrieveSnippetData);
+  // $('.getSnippet').on('click', function() {
+  // 	// let retrieveData = localStorage.getItem('myFormTextData');
+  // 	// $('.retrievedSnippetName').text(retrieveData);
+  // 	// let retrieveSnippetData = localStorage.getItem('myFormSnippetData');
+  // 	// $('.debug').text(retrieveSnippetData);
 
-  });
+  //   let saved = JSON.parse(localStorage.getItem('snippetsArray'));
+  //   let previousSnip = saved[saved.length - 1];
+  //   for (var sName in previousSnip) {
+  //     $('.debug').append('<div><pre class="codeName">' + sName + '</pre><pre class="codeContents">' + previousSnip[sName] + '</pre></div>');
+
+  //   }
+  	// savedSnippets.forEach(function(snip) {
+  	//   for (var snipName in snip) {
+   //      $('.debug').append('<div><pre class="codeName">' + snipName + '</pre><pre class="codeContents">' + snip[snipName] + '</pre></div>');
+  	//   }
+
+  // });
 // Display all snippets:
   $('.getAllSnippets').on('click', function() {
   	let savedSnippets = JSON.parse(localStorage.getItem('snippetsArray'));
   	savedSnippets.forEach(function(snip) {
   	  for (var snipName in snip) {
-        $('.debug').append('<div><p>' + snipName + '</p><p>' + snip[snipName] + '</p></div>');
+        $('.debug').append('<div><pre class="codeName">' + snipName + '</pre><pre class="codeContents shadow-lg">' + snip[snipName] + '</pre></div>');
   	  }
   	});
   });
@@ -54,7 +65,7 @@ $(document).ready(function() {
   	savedSnips.forEach(function(indSnip) {
   	  for (var name in indSnip) {
   	    if (name === searchInput) {
-          $('.debug').replaceWith('<div class="debug"><p>' + name + '</p><p>' + indSnip[name] + '</p></div>')
+          $('.debug').replaceWith('<div><pre class="codeName">' + name + '</pre><pre class="codeContents shadow-lg">' + indSnip[name] + '</pre></div>')
   	    }
   	  }
   	});
