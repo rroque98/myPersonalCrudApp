@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>My personal CRUD app</title>
@@ -13,24 +14,16 @@
   ></script>
   <script src="app.js"></script>
 </head>
+
 <body>
   <header>
+ <!-- Nav bar: -->
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
         <img src="randomScissor.jpg" width="30" height="30" class="d-inline-block align-top" alt="">  My Custom Snippets
       </a>
     </nav>
-  	<!-- <div>
-  	  <nav class="navbar navbar-default">
-  		<div class="navbar-header">
-  		  <a href="#" class="navbar-brand">Snippets</a>		
-  	    </div>
-  	    <div class="nav navbar-nav">
-  	    	<li><a href="#">About</a></li>
-  	    	<li><a href="#">Contact</a></li>
-  	    </div>
-  	  </nav>
-  	</div> -->
+<!-- Jumbotron: -->
   	<div class="jumbotron">
       <h1 class="display-4">My Snippets</h1>
       <p class="lead">This is a simple snippet saving tool directed toward programmers looking for a space to save small segments of code.</p>
@@ -38,32 +31,27 @@
       <p>Use this tool to keep your frequently used functions and blocks of code organized in one area.</p>
       <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Create Snippet</a> -->
     </div>
-  	<!-- <h1>Ricky's Snippets</h1> -->
   </header>
+<!-- Container: -->
   <section>
     <div class="container">
       <div class="snippetName form-group">
         <input class="textField shadow-lg bg-white rounded form-control" type="text" name="firstInputField" placeholder="Snippet Name">
       </div>
-        <!-- <div class="snippetNameButtons">
-        <button class="setData">Click to save snippet name</button>
-        <button class="getData">Click to retrieve previous snippet name</button>
-      </div> -->
       <div class="snippetCode form-group">
         <textarea class="textArea form-group shadow-lg p-3 bg-white rounded form-control" type="text" rows="10" cols="50" placeholder="Type snippet code here"></textarea>
       </div>
-      <!-- buttons -->
+<!-- buttons -->
       <div class="snippetCodeButtons">
         <button class="setSnippet btn btn-primary btn-sm shadow-lg">Save snippet</button>
         <!-- <button class="getSnippet btn btn-primary btn-sm shadow-lg">Retrieve previous snippet</button> -->
         <button class="getAllSnippets btn btn-primary btn-sm shadow-lg">Retrieve all snippets</button>
       </div>
-      <!-- search section -->
+<!-- search section -->
       <div class="search form-group">
       	<input class="searchField searchTextInput shadow-lg bg-white rounded form-control form-group" type="text" placeholder="Find by snippet name">
         <button class="findButton btn btn-primary btn-sm shadow-lg">Find snippet</button>
       </div class="snippetName form-group">
-      <!-- <div class="debug"></div> -->
       <div class="retrievedSnippetName"></div>
       <pre class="debug rounded form-group shadow-lg"><code></code></pre>
     </div>
@@ -71,11 +59,5 @@
   <footer>
   	
   </footer>
-<!-- 	<script >
-		$(document).ready(function() {
-			$('body').html('<p>Hello World</p>');
-		});
-	</script> -->
-
 </body>
 </html>
